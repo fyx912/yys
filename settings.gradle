@@ -1,3 +1,4 @@
 rootProject.name = 'yys'
 include 'yys-crawler'
+include 'service'
 
