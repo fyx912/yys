@@ -1,4 +1,11 @@
 .idea
-build
-out
-targer
+/build
+/out
+/targer
+*.log
+logs
+*.project
+*.classpath
+/bin
+/.gradle/
+.settings
