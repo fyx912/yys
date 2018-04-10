@@ -63,4 +63,9 @@ public class UserTest {
         }
     }
 
+    @Test
+    public void test(){
+        System.out.println(this.userService.count("123456"));
+    }
+
 }

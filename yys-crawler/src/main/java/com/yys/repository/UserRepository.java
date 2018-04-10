@@ -20,4 +20,8 @@ public abstract interface UserRepository  extends BasicRepository<User,Integer> 
     @Query(value = "update user u set u.age = :newAge where  u.id = :oldId " ,nativeQuery = true)
     int updateById(@Param("newAge") int newAge , @Param(value = "oldId") int oldId);
 
+
+    @Query(value = "select count(id) from user where password = :selectPassword ",nativeQuery = true)
+    String count(@Param("selectPassword") String selectPassword);
+
 }

@@ -9,7 +9,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <modules>yys</modules>
     <artifactId>yys-crawler</artifactId>
     <groupId>com.yys</groupId>
     <version>1.0</version>

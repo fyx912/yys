@@ -34,4 +34,9 @@ public class UserServiceImpl implements UserService<User> {
         Assert.notNull(user,"user must not null");
         return this.userRepository.saveAndFlush(user);
     }
+
+    @Override
+    public String count(String code) {
+        return this.userRepository.count(code);
+    }
 }

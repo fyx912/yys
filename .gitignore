@@ -1,11 +1,20 @@
-.idea
-/build
-/out
-/targer
+.idea/
+*/build/
+*/out/
+/targer/
 *.log
-logs
+/logs/
 *.project
 *.classpath
-/bin
-/.gradle/
+/bin/
+.gradle/
+gradle/
 .settings
+# Intellij
+*.iml
+*/*.iml
+*.zip
+*.
+*/gen/
+*/.DS_Store
+unused.txt

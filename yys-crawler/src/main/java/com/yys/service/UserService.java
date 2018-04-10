@@ -9,4 +9,5 @@ public interface UserService<T> {
     Page<T> findAll(int index, int size);
     int updateById(int age, int id);
     User save(T t);
+    String  count(String code);
 }
