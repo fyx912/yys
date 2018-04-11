@@ -8,8 +8,10 @@ import java.util.Date;
 
 public class HttpClientTest {
     public  static void main(String[] args){
-        String URI ="http://apis.juhe.cn/lottery/types";
-       String jsonData =  HttpClientUtils.postMethod(URI);
+        String appKey = "312da6567dc7453369ea030b9a749051";
+        String uri ="http://apis.juhe.cn/lottery/query"+"?key="+appKey;
+        uri += "&lottery_id=qxc&lottery_no=";
+       String jsonData =  HttpClientUtils.postMethod(uri);
        System.out.println(jsonData);
 //        HttpClientUtils.getMethod(URI);
 //        Long startTime = System.currentTimeMillis();
