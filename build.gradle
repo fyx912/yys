@@ -26,6 +26,7 @@ subprojects {
                 "org.springframework.boot:spring-boot-starter-logging:${springBootVersion}",
                 "org.springframework.boot:spring-boot-devtools:${springBootVersion}",
                 "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+                "org.springframework.boot:spring-boot-starter-data-mongodb:${springBootVersion}",
 
                 'mysql:mysql-connector-java:5.1.46',
                 'com.alibaba:druid:1.1.9',

@@ -1,44 +1,47 @@
 package com.yys.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
 /**
  * (彩票开奖-双色球
  */
-@Entity
-@Table(name = "t_lottery_result_ssq")
-public class LotteryResultSsq {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+//@Entity
+//@Table(name = "t_lottery_result_ssq")
+public class LotteryResult implements Serializable {
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Integer id;
 
-    @Column(name = "lottery_no")
+//    @Column(name = "lottery_no")
     private String lottery_no;      //'开奖期号',
-
-    @Column(name = "lottery_red")
+//
+//    @Column(name = "lottery_red")
     private String lottery_red;     //'开奖结果-红球',
 
-    @Column(name = "lottery_blue")
+//    @Column(name = "lottery_blue")
     private String lottery_blue;    //'开奖结果-篮球',
 
-    @Column(name = "lottery_date")
+//    @Column(name = "lottery_date")
     private String lottery_date;    //'开奖日期'
 
-    @Column(name = "lottery_exdate")
+//    @Column(name = "lottery_exdate")
     private String lottery_exdate;  //'兑奖截止日期',
 
-    @Column(name = "lottery_sale_amount")
+//    @Column(name = "lottery_sale_amount")
     private String lottery_sale_amount; //'本期销售额(投注总额)',
 
-    @Column(name = "lottery_pool_amount")
+//    @Column(name = "lottery_pool_amount")
     private String lottery_pool_amount;   //'奖池滚存',
 
+    private List<LotteryResultPrize>  lottery_prize;
 
-    public LotteryResultSsq() {
+
+    public LotteryResult() {
     }
 
-    public LotteryResultSsq(Integer id, String lottery_no, String lottery_red, String lottery_blue, String lottery_date, String lottery_exdate, String lottery_sale_amount, String lottery_pool_amount) {
-        this.id = id;
+    public LotteryResult(String lottery_no, String lottery_red, String lottery_blue, String lottery_date, String lottery_exdate, String lottery_sale_amount, String lottery_pool_amount, List<LotteryResultPrize> lottery_prize) {
         this.lottery_no = lottery_no;
         this.lottery_red = lottery_red;
         this.lottery_blue = lottery_blue;
@@ -46,15 +49,16 @@ public class LotteryResultSsq {
         this.lottery_exdate = lottery_exdate;
         this.lottery_sale_amount = lottery_sale_amount;
         this.lottery_pool_amount = lottery_pool_amount;
+        this.lottery_prize = lottery_prize;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
+//    public Integer getId() {
+//        return id;
+//    }
+//
+//    public void setId(Integer id) {
+//        this.id = id;
+//    }
 
     public String getLottery_no() {
         return lottery_no;
@@ -110,5 +114,13 @@ public class LotteryResultSsq {
 
     public void setLottery_pool_amount(String lottery_pool_amount) {
         this.lottery_pool_amount = lottery_pool_amount;
+    }
+
+    public List<LotteryResultPrize> getLottery_prize() {
+        return lottery_prize;
+    }
+
+    public void setLottery_prize(List<LotteryResultPrize> lottery_prize) {
+        this.lottery_prize = lottery_prize;
     }
 }
