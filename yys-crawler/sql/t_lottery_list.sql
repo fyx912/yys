@@ -30,7 +30,7 @@ CREATE TABLE `t_lottery_list` (
   `datetime` datetime NOT NULL,
   `remarks` varchar(45) DEFAULT NULL COMMENT ' 描述信息',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
