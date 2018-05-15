@@ -1,3 +1,5 @@
 rootProject.name = 'yys'
 include 'yys-crawler'
+include 'yys-api'
+include 'yys-model'
 
