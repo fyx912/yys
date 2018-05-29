@@ -12,8 +12,8 @@ repositories {
 }
 
 dependencies {
-    compile project(":yys-model")
     compile (
+            project(":yys-model"),
             'com.alibaba:druid:1.1.9',
             'mysql:mysql-connector-java:5.1.46'
     )
