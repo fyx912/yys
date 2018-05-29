@@ -1,16 +1,19 @@
-.idea/
 build/
-out/
 targer/
-*.log
-logs/
-*.project
-*.classpath
-bin/
 .gradle/
 gradle/
+
+*.log
+logs/
+
+bin/
 .settings
+*.project
+*.classpath
+
 # Intellij
+.idea/
+out/
 *.iml
 *.zip
 *gen/
