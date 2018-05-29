@@ -12,9 +12,6 @@ gradle/
 .settings
 # Intellij
 *.iml
-*.iml
 *.zip
-*.
 *gen/
 *.DS_Store
-un
